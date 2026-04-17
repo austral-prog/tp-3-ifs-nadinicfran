@@ -35,6 +35,6 @@ def age_check():
         else:
             print("Eres menor de edad")
 
-age_check()
+
 
 
