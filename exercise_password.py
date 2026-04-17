@@ -1,3 +1,6 @@
+from operator import truediv
+
+
 def password():
     """
     Ejercicio 10 - Validador de Contraseña
@@ -24,3 +27,20 @@ def password():
         Debe contener un numero
     """
     pass
+
+    contrasena = input("Ingrese su contrasena: ")
+
+    longitud = len(contrasena) >= 8
+    numero = False
+    for digito in "0123456789":
+        if digito in contrasena:
+            numero = True
+
+    if longitud and numero:
+        print("Contraseña valida")
+    else:
+        if not longitud:
+            print("Contraseña muy corta")
+        if not numero:
+            print("Debe contener un numero")
+

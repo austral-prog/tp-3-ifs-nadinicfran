@@ -1,3 +1,6 @@
+from operator import truediv
+
+
 def age_check():
     """
     Ejercicio 3 - Verificar Mayoría de Edad
@@ -19,5 +22,19 @@ def age_check():
         Entrada invalida
     """
     pass
+
+
+    edad = int(input())
+    limite = int(input())
+
+    if edad <= 0 or limite <= 0 :
+        print("Entrada invalida")
+    else:
+        if edad >= limite:
+            print("Eres mayor de edad")
+        else:
+            print("Eres menor de edad")
+
+age_check()
 
 

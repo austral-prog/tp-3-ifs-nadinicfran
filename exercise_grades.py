@@ -19,3 +19,15 @@ def grades():
         Insuficiente
     """
     pass
+
+    nota = float(input("Ingrese un numero entre 0 y 10"))
+
+    if 9 <= nota <= 10:
+        print("Excelente")
+    if 7 <= nota <= 8:
+        print("Bueno")
+    if 5 <= nota <= 6:
+        print("Regular")
+    if nota <= 4:
+        print("Insuficiente")
+
